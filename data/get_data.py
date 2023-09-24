@@ -3,15 +3,14 @@
 import glob
 import json
 
-
 datas = glob.glob("../TangPoetry/poet.*.json")
 
 for data in datas:
-    with open(data, 'r', encoding='utf-8') as f:
-        poetry = json.load(f)
+    with open(data, 'r', encoding='utf-8') as load:
+        poetry = json.load(load)
         for p in poetry:
             content = p['paragraphs']
             if len(content)==2 and len(content[0])==12 and len(content[1])==12:
-                with open('../data/poetry.txt', 'a', encoding='utf-8') as f:
+                with open('../ChinesePoetry.txt', 'a', encoding='utf-8') as f:
                     f.write("".join(content))
                     f.write('\n')
