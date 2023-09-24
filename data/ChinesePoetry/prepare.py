@@ -3,7 +3,7 @@ import pickle
 import requests
 import numpy as np
 
-with open("poetry.txt", 'r', encoding='utf-8') as f:
+with open("./data/ChinesePoetry/ChinesePoetry.txt", 'r', encoding='utf-8') as f:
     data = f.read()
 print(f"length of dataset in characters: {len(data):,}")
 

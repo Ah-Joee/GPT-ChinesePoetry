@@ -4,7 +4,7 @@
 import glob
 import json
 
-datas = glob.glob("C:/Users/Josep/Desktop/GPT-Chinese/chinese-poetry-master/chinese-poetry-master/全唐诗/poet.*json")
+datas = glob.glob("./TangPoetry/poet*json")
 
 for data in datas:
 
@@ -16,6 +16,6 @@ for data in datas:
             # 只取五言絕句
             content = p['paragraphs']
             if len(content)==2 and len(content[0])==12 and len(content[1])==12:
-                with open('./data/ChinesePoetry.txt', 'a', encoding='utf-8') as f:
+                with open('./data/ChinesePoetry/ChinesePoetry.txt', 'a', encoding='utf-8') as f:
                     f.write("".join(p['paragraphs']))
                     f.write('\n')
