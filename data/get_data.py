@@ -12,6 +12,6 @@ for data in datas:
         for p in poetry:
             content = p['paragraphs']
             if len(content)==2 and len(content[0])==12 and len(content[1])==12:
-                with open('poetry.txt', 'a', encoding='utf-8') as f:
+                with open('../data/poetry.txt', 'a', encoding='utf-8') as f:
                     f.write("".join(content))
                     f.write('\n')
