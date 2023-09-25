@@ -5,7 +5,13 @@ Note that most of the codes in this repository are not original and are followed
 
 This respository aims to use the nanoGPT model as a foundation, feed in the Chinese poetry, and ask the trained-model to produce poetry that written in Chinese.
 
-## Quick Start
+## Quick Start with pre-trained model
+If you just want to see the generation process, run:
+```
+python ./sample.py --device=cpu
+```
+
+## Train your own model
 First, we generate ChinesePoetry.txt from the dataset by running the following in the GPT-ChinesePoetry in the command line: 
 ```
 python ./data/ChinesePoetry/get_data.py
