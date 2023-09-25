@@ -8,6 +8,10 @@ This respository aims to use the nanoGPT model as a foundation, feed in the Chin
 ## Quick Start with pre-trained model
 If you just want to see the generation process, run:
 ```
+python ./sample.py
+```
+Or if you don't have a CUDA supported GPU, run
+```
 python ./sample.py --device=cpu
 ```
 
